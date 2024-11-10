@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07DB461D2CE07AD800DAB050 /* JobData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB461C2CE07AD800DAB050 /* JobData.swift */; };
+		07DB461F2CE07B2D00DAB050 /* JobDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB461E2CE07B2D00DAB050 /* JobDisplay.swift */; };
+		07DB46242CE07E3500DAB050 /* HackerNewsJobsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 07DB46222CE07E3500DAB050 /* HackerNewsJobsModel.xcdatamodeld */; };
+		07DB46262CE085C800DAB050 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07DB46252CE085C800DAB050 /* PersistenceController.swift */; };
+		07F4948B2C56C35F005D89AD /* HackerNewsJobsFetcherAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F4948A2C56C35F005D89AD /* HackerNewsJobsFetcherAppApp.swift */; };
+		07F4948D2C56C35F005D89AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F4948C2C56C35F005D89AD /* ContentView.swift */; };
+		07F4948F2C56C360005D89AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F4948E2C56C360005D89AD /* Assets.xcassets */; };
+		07F494922C56C360005D89AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 07F494912C56C360005D89AD /* Preview Assets.xcassets */; };
+		07F4949D2C56C360005D89AD /* HackerNewsJobsFetcherAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F4949C2C56C360005D89AD /* HackerNewsJobsFetcherAppTests.swift */; };
+		07F494A72C56C360005D89AD /* HackerNewsJobsFetcherAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F494A62C56C360005D89AD /* HackerNewsJobsFetcherAppUITests.swift */; };
+		07F494A92C56C360005D89AD /* HackerNewsJobsFetcherAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F494A82C56C360005D89AD /* HackerNewsJobsFetcherAppUITestsLaunchTests.swift */; };
+		07F494B62C56C381005D89AD /* JobViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F494B52C56C381005D89AD /* JobViewModel.swift */; };
+		07F494B82C56C39B005D89AD /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F494B72C56C39B005D89AD /* NetworkManager.swift */; };
+		07F494BA2C56C3AA005D89AD /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 07F494B92C56C3AA005D89AD /* DatabaseManager.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07F494992C56C360005D89AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07F4947F2C56C35F005D89AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F494862C56C35F005D89AD;
+			remoteInfo = HackerNewsJobsFetcherApp;
+		};
+		07F494A32C56C360005D89AD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 07F4947F2C56C35F005D89AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 07F494862C56C35F005D89AD;
+			remoteInfo = HackerNewsJobsFetcherApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		07DB461C2CE07AD800DAB050 /* JobData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobData.swift; sourceTree = "<group>"; };
+		07DB461E2CE07B2D00DAB050 /* JobDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobDisplay.swift; sourceTree = "<group>"; };
+		07DB46232CE07E3500DAB050 /* HackerNewsJobsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HackerNewsJobsModel.xcdatamodel; sourceTree = "<group>"; };
+		07DB46252CE085C800DAB050 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		07F494872C56C35F005D89AD /* HackerNewsJobsFetcherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackerNewsJobsFetcherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F4948A2C56C35F005D89AD /* HackerNewsJobsFetcherAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsJobsFetcherAppApp.swift; sourceTree = "<group>"; };
+		07F4948C2C56C35F005D89AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		07F4948E2C56C360005D89AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		07F494912C56C360005D89AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		07F494932C56C360005D89AD /* HackerNewsJobsFetcherApp.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HackerNewsJobsFetcherApp.entitlements; sourceTree = "<group>"; };
+		07F494982C56C360005D89AD /* HackerNewsJobsFetcherAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsJobsFetcherAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F4949C2C56C360005D89AD /* HackerNewsJobsFetcherAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsJobsFetcherAppTests.swift; sourceTree = "<group>"; };
+		07F494A22C56C360005D89AD /* HackerNewsJobsFetcherAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HackerNewsJobsFetcherAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		07F494A62C56C360005D89AD /* HackerNewsJobsFetcherAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsJobsFetcherAppUITests.swift; sourceTree = "<group>"; };
+		07F494A82C56C360005D89AD /* HackerNewsJobsFetcherAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackerNewsJobsFetcherAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		07F494B52C56C381005D89AD /* JobViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JobViewModel.swift; sourceTree = "<group>"; };
+		07F494B72C56C39B005D89AD /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		07F494B92C56C3AA005D89AD /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07F494842C56C35F005D89AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F494952C56C360005D89AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F4949F2C56C360005D89AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07F4947E2C56C35F005D89AD = {
+			isa = PBXGroup;
+			children = (
+				07F494892C56C35F005D89AD /* HackerNewsJobsFetcherApp */,
+				07F4949B2C56C360005D89AD /* HackerNewsJobsFetcherAppTests */,
+				07F494A52C56C360005D89AD /* HackerNewsJobsFetcherAppUITests */,
+				07F494882C56C35F005D89AD /* Products */,
+				07F494BE2C56C45C005D89AD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		07F494882C56C35F005D89AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07F494872C56C35F005D89AD /* HackerNewsJobsFetcherApp.app */,
+				07F494982C56C360005D89AD /* HackerNewsJobsFetcherAppTests.xctest */,
+				07F494A22C56C360005D89AD /* HackerNewsJobsFetcherAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07F494892C56C35F005D89AD /* HackerNewsJobsFetcherApp */ = {
+			isa = PBXGroup;
+			children = (
+				07DB46222CE07E3500DAB050 /* HackerNewsJobsModel.xcdatamodeld */,
+				07F4948A2C56C35F005D89AD /* HackerNewsJobsFetcherAppApp.swift */,
+				07F4948C2C56C35F005D89AD /* ContentView.swift */,
+				07F4948E2C56C360005D89AD /* Assets.xcassets */,
+				07F494932C56C360005D89AD /* HackerNewsJobsFetcherApp.entitlements */,
+				07F494902C56C360005D89AD /* Preview Content */,
+				07F494B52C56C381005D89AD /* JobViewModel.swift */,
+				07F494B72C56C39B005D89AD /* NetworkManager.swift */,
+				07F494B92C56C3AA005D89AD /* DatabaseManager.swift */,
+				07DB461C2CE07AD800DAB050 /* JobData.swift */,
+				07DB461E2CE07B2D00DAB050 /* JobDisplay.swift */,
+				07DB46252CE085C800DAB050 /* PersistenceController.swift */,
+			);
+			path = HackerNewsJobsFetcherApp;
+			sourceTree = "<group>";
+		};
+		07F494902C56C360005D89AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				07F494912C56C360005D89AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		07F4949B2C56C360005D89AD /* HackerNewsJobsFetcherAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				07F4949C2C56C360005D89AD /* HackerNewsJobsFetcherAppTests.swift */,
+			);
+			path = HackerNewsJobsFetcherAppTests;
+			sourceTree = "<group>";
+		};
+		07F494A52C56C360005D89AD /* HackerNewsJobsFetcherAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				07F494A62C56C360005D89AD /* HackerNewsJobsFetcherAppUITests.swift */,
+				07F494A82C56C360005D89AD /* HackerNewsJobsFetcherAppUITestsLaunchTests.swift */,
+			);
+			path = HackerNewsJobsFetcherAppUITests;
+			sourceTree = "<group>";
+		};
+		07F494BE2C56C45C005D89AD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07F494862C56C35F005D89AD /* HackerNewsJobsFetcherApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F494AC2C56C360005D89AD /* Build configuration list for PBXNativeTarget "HackerNewsJobsFetcherApp" */;
+			buildPhases = (
+				07F494832C56C35F005D89AD /* Sources */,
+				07F494842C56C35F005D89AD /* Frameworks */,
+				07F494852C56C35F005D89AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HackerNewsJobsFetcherApp;
+			packageProductDependencies = (
+			);
+			productName = HackerNewsJobsFetcherApp;
+			productReference = 07F494872C56C35F005D89AD /* HackerNewsJobsFetcherApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		07F494972C56C360005D89AD /* HackerNewsJobsFetcherAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F494AF2C56C360005D89AD /* Build configuration list for PBXNativeTarget "HackerNewsJobsFetcherAppTests" */;
+			buildPhases = (
+				07F494942C56C360005D89AD /* Sources */,
+				07F494952C56C360005D89AD /* Frameworks */,
+				07F494962C56C360005D89AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07F4949A2C56C360005D89AD /* PBXTargetDependency */,
+			);
+			name = HackerNewsJobsFetcherAppTests;
+			productName = HackerNewsJobsFetcherAppTests;
+			productReference = 07F494982C56C360005D89AD /* HackerNewsJobsFetcherAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		07F494A12C56C360005D89AD /* HackerNewsJobsFetcherAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07F494B22C56C360005D89AD /* Build configuration list for PBXNativeTarget "HackerNewsJobsFetcherAppUITests" */;
+			buildPhases = (
+				07F4949E2C56C360005D89AD /* Sources */,
+				07F4949F2C56C360005D89AD /* Frameworks */,
+				07F494A02C56C360005D89AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				07F494A42C56C360005D89AD /* PBXTargetDependency */,
+			);
+			name = HackerNewsJobsFetcherAppUITests;
+			productName = HackerNewsJobsFetcherAppUITests;
+			productReference = 07F494A22C56C360005D89AD /* HackerNewsJobsFetcherAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07F4947F2C56C35F005D89AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					07F494862C56C35F005D89AD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					07F494972C56C360005D89AD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 07F494862C56C35F005D89AD;
+					};
+					07F494A12C56C360005D89AD = {
+						CreatedOnToolsVersion = 15.4;
+						TestTargetID = 07F494862C56C35F005D89AD;
+					};
+				};
+			};
+			buildConfigurationList = 07F494822C56C35F005D89AD /* Build configuration list for PBXProject "HackerNewsJobsFetcherApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 07F4947E2C56C35F005D89AD;
+			packageReferences = (
+			);
+			productRefGroup = 07F494882C56C35F005D89AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07F494862C56C35F005D89AD /* HackerNewsJobsFetcherApp */,
+				07F494972C56C360005D89AD /* HackerNewsJobsFetcherAppTests */,
+				07F494A12C56C360005D89AD /* HackerNewsJobsFetcherAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07F494852C56C35F005D89AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F494922C56C360005D89AD /* Preview Assets.xcassets in Resources */,
+				07F4948F2C56C360005D89AD /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F494962C56C360005D89AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F494A02C56C360005D89AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07F494832C56C35F005D89AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DB46262CE085C800DAB050 /* PersistenceController.swift in Sources */,
+				07F494B82C56C39B005D89AD /* NetworkManager.swift in Sources */,
+				07DB461F2CE07B2D00DAB050 /* JobDisplay.swift in Sources */,
+				07DB46242CE07E3500DAB050 /* HackerNewsJobsModel.xcdatamodeld in Sources */,
+				07F4948D2C56C35F005D89AD /* ContentView.swift in Sources */,
+				07F494BA2C56C3AA005D89AD /* DatabaseManager.swift in Sources */,
+				07DB461D2CE07AD800DAB050 /* JobData.swift in Sources */,
+				07F4948B2C56C35F005D89AD /* HackerNewsJobsFetcherAppApp.swift in Sources */,
+				07F494B62C56C381005D89AD /* JobViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F494942C56C360005D89AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F4949D2C56C360005D89AD /* HackerNewsJobsFetcherAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		07F4949E2C56C360005D89AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07F494A72C56C360005D89AD /* HackerNewsJobsFetcherAppUITests.swift in Sources */,
+				07F494A92C56C360005D89AD /* HackerNewsJobsFetcherAppUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		07F4949A2C56C360005D89AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F494862C56C35F005D89AD /* HackerNewsJobsFetcherApp */;
+			targetProxy = 07F494992C56C360005D89AD /* PBXContainerItemProxy */;
+		};
+		07F494A42C56C360005D89AD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 07F494862C56C35F005D89AD /* HackerNewsJobsFetcherApp */;
+			targetProxy = 07F494A32C56C360005D89AD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		07F494AA2C56C360005D89AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		07F494AB2C56C360005D89AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		07F494AD2C56C360005D89AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = HackerNewsJobsFetcherApp/HackerNewsJobsFetcherApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HackerNewsJobsFetcherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bh.HackerNewsJobsFetcherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		07F494AE2C56C360005D89AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
+				CODE_SIGN_ENTITLEMENTS = HackerNewsJobsFetcherApp/HackerNewsJobsFetcherApp.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"HackerNewsJobsFetcherApp/Preview Content\"";
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bh.HackerNewsJobsFetcherApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		07F494B02C56C360005D89AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bh.HackerNewsJobsFetcherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerNewsJobsFetcherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HackerNewsJobsFetcherApp";
+			};
+			name = Debug;
+		};
+		07F494B12C56C360005D89AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.5;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bh.HackerNewsJobsFetcherAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HackerNewsJobsFetcherApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/HackerNewsJobsFetcherApp";
+			};
+			name = Release;
+		};
+		07F494B32C56C360005D89AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bh.HackerNewsJobsFetcherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = HackerNewsJobsFetcherApp;
+			};
+			name = Debug;
+		};
+		07F494B42C56C360005D89AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = VH8FYD6YYB;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.bh.HackerNewsJobsFetcherAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = HackerNewsJobsFetcherApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07F494822C56C35F005D89AD /* Build configuration list for PBXProject "HackerNewsJobsFetcherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F494AA2C56C360005D89AD /* Debug */,
+				07F494AB2C56C360005D89AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F494AC2C56C360005D89AD /* Build configuration list for PBXNativeTarget "HackerNewsJobsFetcherApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F494AD2C56C360005D89AD /* Debug */,
+				07F494AE2C56C360005D89AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F494AF2C56C360005D89AD /* Build configuration list for PBXNativeTarget "HackerNewsJobsFetcherAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F494B02C56C360005D89AD /* Debug */,
+				07F494B12C56C360005D89AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07F494B22C56C360005D89AD /* Build configuration list for PBXNativeTarget "HackerNewsJobsFetcherAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07F494B32C56C360005D89AD /* Debug */,
+				07F494B42C56C360005D89AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		07DB46222CE07E3500DAB050 /* HackerNewsJobsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				07DB46232CE07E3500DAB050 /* HackerNewsJobsModel.xcdatamodel */,
+			);
+			currentVersion = 07DB46232CE07E3500DAB050 /* HackerNewsJobsModel.xcdatamodel */;
+			path = HackerNewsJobsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 07F4947F2C56C35F005D89AD /* Project object */;
+}
