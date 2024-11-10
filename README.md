@@ -1,5 +1,7 @@
 # HackerNewsJobsMacOS
 
+![](icon-256.png)
+
 HackerNewsJobsFetcherApp is a macOS SwiftUI application that fetches and displays job postings from Hacker News. This project uses Core Data to persist job data locally and includes basic search functionality to filter jobs by keyword.
 
 ## Features
@@ -21,8 +23,8 @@ HackerNewsJobsFetcherApp is a macOS SwiftUI application that fetches and display
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/HackerNewsJobsFetcherApp.git
-   cd HackerNewsJobsFetcherApp
+   git clone https://github.com/binghuan/HackerNewsJobsMacOS.git
+   cd HackerNewsJobsMacOS
    ```
 
 2. Open the project in Xcode:
