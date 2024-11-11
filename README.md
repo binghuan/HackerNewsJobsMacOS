@@ -50,6 +50,5 @@ HackerNewsJobsFetcherApp is a macOS SwiftUI application that fetches and display
 - `DatabaseManager.swift`: Handles Core Data operations including job data insertion and fetching.
 - `NetworkManager.swift`: Manages network requests to the Hacker News API.
 
-## Contributing
-
-Feel free to submit issues or pull requests. Contributions are welcome!
+## Demo 
+![](./README/demo.png)
