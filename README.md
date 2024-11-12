@@ -18,7 +18,6 @@ HackerNewsJobsFetcherApp is a macOS SwiftUI application that fetches and display
 - Fetches job postings from Hacker News API and saves them to Core Data.
 - Displays job details, including title, poster, URL, score, and additional description.
 - Supports keyword search to filter displayed jobs.
-- Handles duplicate job entries by checking for existing job IDs before insertion.
 
 ## Requirements
 
